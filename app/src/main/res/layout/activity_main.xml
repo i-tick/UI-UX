@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Good Food, Great Life"
+             android:layout_centerHorizontal="true"
+             android:textSize="33dp"
+             android:textStyle="italic"
+             android:layout_marginTop="100dp"
+             android:layout_gravity="center"/>
+         <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foody"
+            android:scaleType="fitXY" android:layout_gravity="center"
+             android:layout_marginTop="22dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="FOODY"
+             android:layout_gravity="center"
+             android:textSize="60dp"
+             android:textStyle="bold"
+             android:layout_marginTop="22dp"
+             android:textColor="@android:color/holo_red_dark"/>
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Sign Up"
+             android:layout_gravity="center"
+             android:layout_marginTop="10dp"
+             android:textSize="30dp" />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Already Have An Account"
+             android:layout_gravity="center"
+             android:background="@android:color/holo_purple"
+             android:textSize="22dp" />
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="150dp"
+             android:layout_gravity="center"
+             android:textSize="28dp"
+             android:text="Enter Your Current Location"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="25dp"
+             android:text="Near PWD office, Bhubaneswar"
+             android:layout_gravity="center"
+             android:layout_marginTop="20dp"/>
+         <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: 9876543214"
+             android:layout_marginTop="10dp"
+             android:layout_gravity="center"
+            android:textSize="28dp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+
+
+     </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
